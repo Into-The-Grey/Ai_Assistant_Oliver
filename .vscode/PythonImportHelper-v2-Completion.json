@@ -1,0 +1,27 @@
+[
+    {
+        "label": "GPT2LMHeadModel",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "GPT2Tokenizer",
+        "importPath": "transformers",
+        "description": "transformers",
+        "isExtraImport": true,
+        "detail": "transformers",
+        "documentation": {}
+    },
+    {
+        "label": "download_model",
+        "kind": 2,
+        "importPath": "src.download_model",
+        "description": "src.download_model",
+        "peekOfCode": "def download_model(model_name=\"gpt2-xl\", model_dir=\"../models/gpt2-xl\"):\n    \"\"\"\n    Downloads the specified model and tokenizer and saves them to the model_dir.\n    \"\"\"\n    # Ensure model_dir exists\n    import os\n    os.makedirs(model_dir, exist_ok=True)\n    # Downloading the model and tokenizer\n    model = GPT2LMHeadModel.from_pretrained(model_name)\n    tokenizer = GPT2Tokenizer.from_pretrained(model_name)",
+        "detail": "src.download_model",
+        "documentation": {}
+    }
+]
